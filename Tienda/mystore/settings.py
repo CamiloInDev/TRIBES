@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'overrideuser.apps.OverrideuserConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,7 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tiendapp',
     'usuarios',
+    
 ]
+
+AUTH_USER_MODEL = 'overrideuser.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -79,7 +83,7 @@ WSGI_APPLICATION = 'mystore.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'usuariostienda',
+        'NAME': 'usuarios',
         'USER':'postgres',
         'PASSWORD':'1488',
         'HOST': 'localhost',
