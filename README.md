@@ -1,10 +1,11 @@
 # 👕 Tribes - Tienda de Ropa Online
 
-**Tribes** es una página web para vender ropa. Por ahora permite que las personas se registren, inicien sesión y accedan a una zona donde en el futuro se mostrarán productos. El proyecto está hecho con Django (Python) y usa una base de datos para guardar los datos de los usuarios.
+**Tribes** es una página web para vender ropa. Por ahora permite que las personas se registren, inicien sesión con unos campos totalmente personalizados haciendo uso del override de usuarios y añadiendo campos como telefono y direccion,  y accedan a una zona donde en el futuro se mostrarán productos. El proyecto está hecho con Django (Python) y usa una base de datos para guardar los datos de los usuarios.
 
 ## ✨ ¿Qué tiene esta web?
 
 - Registro de usuarios  
+- Override de los usuarios por defecto que añade campos de telefono y direccion
 - Inicio de sesión  
 - Organización del proyecto en módulos  
 - Conexión a base de datos (PostgreSQL o SQLite)  
